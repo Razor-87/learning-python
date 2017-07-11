@@ -1,4 +1,4 @@
-# introducing lists
+# changing, addingm and removing elements
 motorcycles_def = ['honda', 'yamaha', 'suzuki']
 motorcycles = motorcycles_def[:]
 print(motorcycles)
