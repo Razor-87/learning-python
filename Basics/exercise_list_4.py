@@ -11,7 +11,7 @@ print(countries)
 countries.sort()
 print(countries)
 countries.sort(reverse=True)
-print(countries.title)
+print(countries)
 guest_list = [
     'Lao Tzu',
     'Gaius Julius Caesar',
