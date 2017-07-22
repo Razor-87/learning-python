@@ -1,11 +1,10 @@
 age = "\n(Enter 'q' or 'Q' when you are finished.)"
 age += "\n\tEnter your age: "
 
-active = True
-while active:
+while True:
     price = input(age)
     if str(price.lower()) == 'q':
-        active = False
+        break
     elif int(price) < 3:
         print("For you, admission is free.")
     elif 3 <= int(price) <= 12:
