@@ -1,6 +1,7 @@
-# functions
-def great_user():
+# defining a functions
+def great_user(username):
     """Display a simple greeting."""
-    print("Hello!")
+    print("Hello " + username.title() + "!")
 
-great_user()
+
+great_user('razor87')
