@@ -16,5 +16,6 @@ def make_great(names):
 
 magicians = ['phil', 'robert', 'ted']
 magicians2 = make_great(magicians[:])
+
 show_magicians(magicians2)
 show_magicians(magicians)
