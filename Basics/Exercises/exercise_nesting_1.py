@@ -1,3 +1,4 @@
+# 20.07.2017
 man_1 = {
     'first_name': 'john',
     'last_name': 'smit',

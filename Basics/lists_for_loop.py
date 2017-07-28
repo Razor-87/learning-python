@@ -1,3 +1,4 @@
+# 12.07.2017
 # working with lists and for loop
 magicans = ['alice', 'david', 'carolina']
 for magican in magicans:

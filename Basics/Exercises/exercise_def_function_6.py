@@ -1,3 +1,4 @@
+# 26.07.2017
 def show_magicians(names):
     """Displays a name from the list."""
     print("\nMagicians: ")

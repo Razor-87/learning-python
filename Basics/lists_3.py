@@ -1,3 +1,4 @@
+# 11.07.2017
 # organizing a list
 cars_def = ['bmw', 'audi', 'toyota', 'subaru']
 cars = cars_def[:]

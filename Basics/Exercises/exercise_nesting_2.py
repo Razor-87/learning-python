@@ -1,3 +1,4 @@
+# 20.07.2017
 pet_phil = {
     'name': 'phil',
     'kind': 'dog',
@@ -21,4 +22,3 @@ for pet in pets:
     print("\tName: " + pet['name'].title())
     print("\tKind: " + pet['kind'].title())
     print("\tOwner: " + pet['owner'].title() + "\n")
-

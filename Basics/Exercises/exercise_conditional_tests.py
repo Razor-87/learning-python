@@ -1,3 +1,4 @@
+# 15.07.2017
 car = 'Toyota'
 print("car = 'Toyota'")
 print("Is car == 'subaru'? I predict False.")

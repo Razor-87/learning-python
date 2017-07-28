@@ -1,3 +1,4 @@
+# 15.07.2017
 # if statements / if-else / if-elif-else
 cars = ['audi', 'bmw', 'subaru', 'toyota']
 for car in cars:

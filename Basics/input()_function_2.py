@@ -1,3 +1,4 @@
+# 21.07.2017
 # input() function
 age = input("How ald are you? ")
 age = int(age)

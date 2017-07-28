@@ -1,3 +1,4 @@
+# 24.07.2017
 def make_shirt(size, text):
     """Size and text on the shirt."""
     print("\nSize: " + size.upper())

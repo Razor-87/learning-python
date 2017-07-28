@@ -1,3 +1,4 @@
+# 12.07.2017
 pizza_kinds = ['neapolitan pizza', 'chicago pizza', 'sicilian pizza']
 for pizza in pizza_kinds:
     print("I like " + pizza + "\n")

@@ -1,3 +1,4 @@
+# 17.07.2017
 countries = ['japan', 'china', 'taiwan', 'australia', 'new zealand']
 print(countries)
 print(sorted(countries))

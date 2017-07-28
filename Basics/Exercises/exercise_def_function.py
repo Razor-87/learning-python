@@ -1,3 +1,4 @@
+# 24.07.2017
 def display_message():
     """Display a simple message."""
     print("The definition of a function is simple.")

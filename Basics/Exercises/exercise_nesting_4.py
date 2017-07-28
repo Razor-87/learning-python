@@ -1,3 +1,4 @@
+# 21.07.2017
 cities = {
     'moskow': {
         'country': 'russia',
@@ -26,4 +27,3 @@ for name, info in cities.items():
     print("\tCountry: " + country.title())
     print("\tPopulation: " + str(population))
     print("\tFact: " + fact)
-

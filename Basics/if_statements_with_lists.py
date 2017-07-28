@@ -1,3 +1,4 @@
+# 16.07.2017
 # if statements with lists
 requested_toppings = ['mushrooms', 'green peppers', "extra cheese"]
 for requested_topping in requested_toppings:

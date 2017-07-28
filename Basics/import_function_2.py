@@ -1,3 +1,4 @@
+# 27.07.2017
 # functions in modules
 # if '*' instead of the 'make_pizza' then import of all functions
 from function_module import make_pizza

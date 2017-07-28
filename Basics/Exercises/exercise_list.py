@@ -1,3 +1,4 @@
+# 10.07.2017
 names = ["Anna", "Cameron", "Jeen", "Daniela", "Trixie"]
 print(names[0])
 print(names[1])

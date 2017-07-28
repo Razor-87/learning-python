@@ -1,4 +1,7 @@
+# 25.07.2017
 # return values / making an argument optional / returning a dictionary
+
+
 def get_formatted_name(first_name, last_name):
     """Return a full name, neatly formatted."""
     full_name = first_name + ' ' + last_name

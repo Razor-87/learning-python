@@ -1,3 +1,4 @@
+# 26.07.2017
 def build_profile(first, last, **user_info):
     """Build a dictionary containing everything we know about a user."""
     profile = {}

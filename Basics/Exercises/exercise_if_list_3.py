@@ -1,3 +1,4 @@
+# 17.07.2017
 ordinal_numbers = list(range(1, 10))
 for number in ordinal_numbers:
     if number == 1:

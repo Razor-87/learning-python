@@ -1,3 +1,4 @@
+# 15.07.2017
 alien_color = 'green'
 if 'green' in alien_color:
     print("The player earned 5 points.")

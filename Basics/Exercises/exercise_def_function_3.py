@@ -1,3 +1,4 @@
+# 25.07.2017
 def city_country(city, country):
     """Displays the city and country."""
     city_country = city.title() + ", " + country.title()

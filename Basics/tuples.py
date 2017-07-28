@@ -1,3 +1,4 @@
+# 13.07.2017
 # tuples
 dimensions = (200, 50)
 print(dimensions[0])

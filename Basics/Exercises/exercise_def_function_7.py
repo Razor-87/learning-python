@@ -1,3 +1,4 @@
+# 26.07.2017
 def composition_sandwich(*items):
     """Displays a list of components."""
     print("\nYour sandwich consists of:")

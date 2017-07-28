@@ -1,3 +1,4 @@
+# 25.07.2017
 def make_album(name_artist, name_album, album_tracks=''):
     """Displays a description of the music album."""
     if album_tracks:

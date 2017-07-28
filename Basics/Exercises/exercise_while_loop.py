@@ -1,3 +1,4 @@
+# 21.07.2017
 prompt = "\n(Enter 'quit' when you are finished.)"
 prompt += "\n\tEnter the ingredients for the pizza: "
 message = ""

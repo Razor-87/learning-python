@@ -1,3 +1,4 @@
+# 13.07.2017
 digits = list(range(1, 21))
 for digit in digits:
     print(digit)

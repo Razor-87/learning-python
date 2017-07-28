@@ -1,3 +1,4 @@
+# 21.07.2017
 # using continue in a loop / avoiding infinite loops
 current_number = 0
 while current_number < 10:

@@ -1,3 +1,4 @@
+# 19.07.2017
 glossary = {
     'variable': 'is something that holds a value that may change.',
     'list': 'is mutable sequences, typically \

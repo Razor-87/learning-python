@@ -1,3 +1,4 @@
+# 20.07.2017
 favorite_places = {
     'cafe': ['eric', 'john', 'ted'],
     'library': ['john', 'eric'],

@@ -1,4 +1,7 @@
+# 26.07.2017
 # passing an arbitrary number of arguments
+
+
 def make_pizza(*toppings):
     """Summarize the pizza we are about to make."""
     print("\nMaking a pizza with the following toppings:")

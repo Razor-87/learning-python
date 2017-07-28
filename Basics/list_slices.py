@@ -1,3 +1,4 @@
+# 13.07.2017
 # slices
 players = ['charles', 'martina', 'michael', 'florence', 'eli']
 print(players[0:3])

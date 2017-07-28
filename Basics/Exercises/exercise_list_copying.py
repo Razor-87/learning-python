@@ -1,3 +1,4 @@
+# 13.07.2017
 pizza_kinds = ['neapolitan pizza', 'chicago pizza', 'sicilian pizza']
 friend_pizzas = pizza_kinds[:]
 pizza_kinds.append('california pizza')

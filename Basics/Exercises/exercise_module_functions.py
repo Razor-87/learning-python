@@ -1,7 +1,4 @@
-# 25.07.2017
-# passing a list
-
-
+# 28.07.2017
 def print_models(unprinted_designs, completed_models):
     """
     Simulate printing each design, until none are left.
@@ -19,10 +16,3 @@ def show_completed_models(completed_models):
     print("\nThe following models have been printed:")
     for completed_model in completed_models:
         print(completed_model)
-
-
-unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
-completed_models = []
-# makes a copy - unprinted_designs[:]
-print_models(unprinted_designs, completed_models)
-show_completed_models(completed_models)

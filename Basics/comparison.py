@@ -1,3 +1,4 @@
+# 13.07.2017
 # comparison
 car = 'bmw'
 print(car == 'bmw')

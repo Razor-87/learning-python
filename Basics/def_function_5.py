@@ -1,4 +1,7 @@
+# 25.07.2017
 # passing a list
+
+
 def greet_users(names):
     """Print a simple greeting to each user in the list."""
     for name in names:

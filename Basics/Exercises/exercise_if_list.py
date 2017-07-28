@@ -1,3 +1,4 @@
+# 18.07.2017
 usernames = ['john11', 'user99', 'admin', 'tester55', 'guest22']
 if usernames:
     for username in usernames:

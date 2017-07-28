@@ -1,3 +1,4 @@
+# 13.07.2017
 # checking wheter a value is/is not in a list
 requested_toppings = ['mushrooms', 'onions', 'pineapple']
 print('mushrooms' in requested_toppings)

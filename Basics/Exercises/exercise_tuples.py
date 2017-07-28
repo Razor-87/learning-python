@@ -1,3 +1,4 @@
+# 13.07.2017
 buffet_menu = ('pizza', 'roll', 'pasta', 'chicken', 'beef')
 for dish in buffet_menu:
     print(dish.title())

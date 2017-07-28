@@ -1,3 +1,4 @@
+# 13.07.2017
 # copying a list
 my_foods = ['pizza', 'falafel', 'carrot cake']
 friend_foods = my_foods[:]

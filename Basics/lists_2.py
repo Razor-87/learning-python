@@ -1,3 +1,4 @@
+# 11.07.2017
 # changing, addingm and removing elements
 motorcycles_def = ['honda', 'yamaha', 'suzuki']
 motorcycles = motorcycles_def[:]
