@@ -21,6 +21,7 @@ class IceCreamStand(Restaurant):
     """A simple ice cream stand model"""
 
     def __init__(self, flavors, restaurant_name='', cuisine_type=''):
+        """Initialize attributes."""
         super().__init__(restaurant_name, cuisine_type)
         self.flavors = flavors
 
