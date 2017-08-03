@@ -1,4 +1,4 @@
-# 02.08.2017
+# 03.08.2017
 class User():
     """Simple user model."""
 
@@ -39,13 +39,7 @@ class Privileges():
 class Admin(User):
     """Creates an administrator class based on the user class."""
 
-    def __init__(self, privileges, first_name='',
-                 last_name='', age='', city=''):
+    def __init__(self, privileges, first_name='', last_name='', age='', city=''):
         """Initialize attributes."""
         super().__init__(first_name, last_name, age, city)
         self.privileges = Privileges(privileges)
-
-
-admin_privileges = ('can add post', 'can delete post', 'can ban user')
-admin_1 = Admin(admin_privileges)
-admin_1.privileges.show_privileges()
