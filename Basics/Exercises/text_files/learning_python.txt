@@ -1,0 +1,4 @@
+In Python you can create a variable.
+In Python you can define the function.
+In Python you can create a list.
+In Python you can create a class.
