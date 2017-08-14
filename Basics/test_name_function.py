@@ -1,4 +1,4 @@
-# 12.07.2017
+# 12.08.2017
 def get_formatted_name(first, last, middle=''):
     """Return a full name, neatly formatted."""
     if middle:

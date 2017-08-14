@@ -1,4 +1,4 @@
-# 12.07.2017
+# 12.08.2017
 # testing a function
 import unittest
 from test_name_function import get_formatted_name
