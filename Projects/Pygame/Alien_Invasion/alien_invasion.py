@@ -1,9 +1,8 @@
-# 17.08.2017
+# 18.08.2017
 import pygame
 
 from settings import Settings
 from ship import Ship
-from galaxy import Galaxy
 import game_functions as gf
 
 
@@ -18,13 +17,11 @@ def run_game():
     # Make a ship
     ship = Ship(screen)
 
-    # Make a galaxy
-    galaxy = Galaxy(screen)
-
     # Start the main loop for the game.
     while True:
-        gf.check_events()
-        gf.update_screen(ai_settings, screen, ship, galaxy)
+        gf.check_events(ship)
+        ship.update()
+        gf.update_screen(ai_settings, screen, ship)
 
 
 run_game()
