@@ -1,4 +1,4 @@
-# 18.08.2017
+# 19.08.2017
 import pygame
 
 from settings import Settings

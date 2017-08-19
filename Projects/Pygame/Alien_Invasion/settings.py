@@ -1,4 +1,4 @@
-# 18.08.2017
+# 19.08.2017
 class Settings():
     """A class to store all settings for Alien Invasion."""
 
