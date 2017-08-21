@@ -1,13 +1,13 @@
 # 21.08.2017
 class Settings():
-    """A class to store all settings for Alien Invasion."""
+    """A class to store all settings."""
 
     def __init__(self):
         """Initialize the game's settings."""
         # Screen settings
         self.screen_width = 1440
         self.screen_height = 900
-        self.bg_color = (230, 230, 230)
+        self.bg_color = (0, 0, 0)
 
-        # Ship settings
-        self.ship_speed_factor = 1.5
+        # Rocket settings
+        self.rocket_speed_factor = 1.5
