@@ -1,4 +1,4 @@
-# 23.08.2017
+# 24.08.2017
 import pygame
 from pygame.sprite import Group
 
@@ -24,7 +24,7 @@ def run_game():
     while True:
         gf.check_events(ss_settings, screen, ship, bullets)
         ship.update()
-        gf.update_bullets(bullets)
+        gf.update_bullets(bullets, ss_settings)
         gf.update_screen(ss_settings, screen, ship, bullets)
 
 
