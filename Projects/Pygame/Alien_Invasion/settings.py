@@ -1,4 +1,4 @@
-# 26.08.2017
+# 27.08.2017
 class Settings():
     """A class to store all settings for Alien Invasion."""
 
@@ -13,7 +13,7 @@ class Settings():
         self.ship_speed_factor = 1.5
 
         # Bullet settings
-        self.bullet_speed_factor = 1.1
+        self.bullet_speed_factor = 2
         self.bullet_width = 3
         self.bullet_height = 10
         self.bullet_color = 60, 60, 60

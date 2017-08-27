@@ -1,4 +1,4 @@
-# 26.08.2017
+# 27.08.2017
 import pygame
 from pygame.sprite import Sprite
 
@@ -27,8 +27,8 @@ class Alien(Sprite):
         """Draw the alien at its current location."""
         self.screen.blit(self.image, self.rect)
 
-    def check_bottom(self):
-        """Return True if alien is at bottom of screen."""
+    def check_edges(self):
+        """Return True if alien is at edges of screen."""
         screen_rect = self.screen.get_rect()
         if self.rect.right >= screen_rect.right:
             return True
