@@ -1,4 +1,4 @@
-# 29.08.2017
+# 31.08.2017
 import sys
 
 import pygame
@@ -36,14 +36,15 @@ def check_events(cat_settings, screen, catcher):
             check_keyup_events(event, catcher)
 
 
+# def detect_collisions(cat_settings, screen):
+
+
 def update_screen(cat_settings, screen, catcher, ball):
     """Update images on the screen and flip to the new screen."""
     # Redraw the screen during each pass through the loop
     screen.fill(cat_settings.bg_color)
-
     # Draw catcher and ball
     catcher.blitme()
     ball.blitme()
-
     # Make the most recently drawn screen visible
     pygame.display.flip()

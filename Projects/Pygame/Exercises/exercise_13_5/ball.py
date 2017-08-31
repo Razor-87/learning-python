@@ -1,4 +1,4 @@
-# 29.08.2017
+# 31.08.2017
 import pygame
 from random import randint
 
@@ -27,12 +27,28 @@ class Ball():
         # self.x = float(random)
         self.rect.x = self.x
 
-    # def update(self):
-    #     """Update the catcher's position based on the movement flags."""
-    #     # Update the catcher's center value, not the rect.
+    def ball_move(self):
+        """Update the ball's position based on the movement flags."""
+        self.rect.y += self.cat_settings.ball_speed
 
-    #     # Update rect object from self.center.
-    #     self.rect.centerx = self.center
+    def check_bottom(self):
+        """Return True if ball is at bottom of screen."""
+        screen_rect = self.screen.get_rect()
+        if self.rect.bottom >= screen_rect.bottom:
+            return True
+
+    def ball_up(self):
+        """Move ball up"""
+        if self.check_bottom():
+            self.rect.y = self.screen_rect.top
+            self.x = randint(0, self.cat_settings.screen_width)
+            self.rect.x = self.x
+
+    def update(self):
+        """Update the movement and position of the ball."""
+        self.ball_move()
+        self.ball_up()
+        # ball_up(cat_settings, screen)
 
     def blitme(self):
         """Draw the ball at its current location."""

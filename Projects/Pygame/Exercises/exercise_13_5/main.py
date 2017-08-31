@@ -1,4 +1,4 @@
-# 29.08.2017
+# 31.08.2017
 import pygame
 
 from ball import Ball
@@ -22,10 +22,8 @@ def run_game():
     # Start the main loop for the game.
     while True:
         gf.check_events(cat_settings, screen, catcher)
-        # gf.update_ball(cat_settings, screen, ball)
-        # gf.update_catcher(cat_settings, screen, catcher)
         catcher.update()
-        # ball.update()
+        ball.update()
         gf.update_screen(cat_settings, screen, ball, catcher)
 
 
