@@ -1,4 +1,4 @@
-# 31.08.2017
+# 01.09.2017
 import pygame
 
 from ball import Ball
@@ -24,6 +24,7 @@ def run_game():
         gf.check_events(cat_settings, screen, catcher)
         catcher.update()
         ball.update()
+        gf.detect_collisions(cat_settings, screen, catcher, ball)
         gf.update_screen(cat_settings, screen, ball, catcher)
 
 

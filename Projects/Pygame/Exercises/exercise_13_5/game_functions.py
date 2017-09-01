@@ -1,9 +1,8 @@
-# 31.08.2017
+# 01.09.2017
 import sys
 
 import pygame
-# from ball import Ball
-# from catcher import Catcher
+from random import randint
 
 
 def check_keydown_events(event, cat_settings, screen, catcher):
@@ -29,14 +28,43 @@ def check_events(cat_settings, screen, catcher):
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit()
-
         elif event.type == pygame.KEYDOWN:
             check_keydown_events(event, cat_settings, screen, catcher)
         elif event.type == pygame.KEYUP:
             check_keyup_events(event, catcher)
 
 
-# def detect_collisions(cat_settings, screen):
+def ball_check_bottom(cat_settings, screen, ball):
+    """Ball up if ball is at bottom of screen."""
+    screen_rect = ball.screen.get_rect()
+    if ball.rect.y >= screen_rect.bottom:
+        ball_up(cat_settings, screen, ball)
+
+
+def ball_check_catcher(cat_settings, screen, catcher, ball):
+    """if ball rect crosses catcher rect return True."""
+    if ball.rect.left < catcher.rect.left:
+        return False
+    if ball.rect.right > catcher.rect.right:
+        return False
+    if ball.rect.y < catcher.rect.top:
+        return False
+    else:
+        return True
+
+
+def ball_up(cat_settings, screen, ball):
+    """Move ball up."""
+    ball.rect.y = ball.screen_rect.top
+    ball.x = randint(50, ball.cat_settings.screen_width - 50)
+    ball.rect.x = ball.x
+
+
+def detect_collisions(cat_settings, screen, catcher, ball):
+    """Detect collisions."""
+    ball_check_bottom(cat_settings, screen, ball)
+    if ball_check_catcher(cat_settings, screen, catcher, ball):
+        ball_up(cat_settings, screen, ball)
 
 
 def update_screen(cat_settings, screen, catcher, ball):
