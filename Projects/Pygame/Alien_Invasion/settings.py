@@ -1,4 +1,4 @@
-# 27.08.2017
+# 02.09.2017
 class Settings():
     """A class to store all settings for Alien Invasion."""
 
@@ -11,6 +11,7 @@ class Settings():
 
         # Ship settings
         self.ship_speed_factor = 1.5
+        self.ship_limit = 3
 
         # Bullet settings
         self.bullet_speed_factor = 2
@@ -21,6 +22,6 @@ class Settings():
 
         # Alien settings
         self.alien_speed_factor = 1
-        self.fleet_drop_speed = 10
+        self.fleet_drop_speed = 30
         # fleet_direction of 1 represents right; -1 represents left.
         self.fleet_direction = 1
