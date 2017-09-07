@@ -1,4 +1,4 @@
-# 06.09.2017
+# 07.09.2017
 import pygame
 
 
@@ -11,47 +11,31 @@ class Rectangle():
         self.ss_settings = ss_settings
 
         # Set the dimensions and properties of the rectangle.
-        self.width, self.height = 100, 50
-        self.rectangle_color = (0, 0, 0)
+        self.width, self.height = 20, 40
+        self.rectangle_color = (50, 50, 50)
         self.screen_rect = screen.get_rect()
 
         # Build the rectangle's rect object and right it.
         self.rect = pygame.Rect(0, 0, self.width, self.height)
-        self.rect.right = self.screen_rect.right - 10
-        self.rect.top = self.screen_rect.top
+        self.rect.right = self.screen_rect.right
+        self.rect.top = self.screen_rect.top + 5
 
         # Store a decimal value for the rectangle's center.
         self.y = float(self.rect.y)
 
-    def rectangle_move_up(self):
-        """Update the ball's position based on the movement flags."""
-        self.y -= self.ss_settings.rectangle_speed_factor
-
-    def rectangle_move_down(self):
-        """Update the ball's position based on the movement flags."""
-        self.y += self.ss_settings.rectangle_speed_factor
-
-    def directions(self):
-        """Directions"""
-        if self.rect.top == self.screen_rect.top:
-            return 0
-        else:
-            return False
-        if self.rect.bottom == self.screen_rect.bottom:
-            return 1
-        else:
-            return False
+    def check_edges(self):
+        """Return True if rectangle is at edges of screen."""
+        screen_rect = self.screen.get_rect()
+        if self.rect.top == screen_rect.top:
+            return True
+        elif self.rect.bottom == self.screen_rect.bottom:
+            return True
 
     def update(self):
         """Update the rectangle's position."""
         # Update the rectangle's center value, not the rect.
-        if self.directions():
-            direction = self.directions()
-            if direction == 0:
-                self.rectangle_move_down()
-            if direction == 1:
-                self.rectangle_move_up()
-            print(direction)
+        self.y += (self.ss_settings.rectangle_speed_factor *
+                   self.ss_settings.rectangle_direction)
 
         # Update rect object from self.y.
         self.rect.y = self.y
