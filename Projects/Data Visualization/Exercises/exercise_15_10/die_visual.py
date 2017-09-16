@@ -1,4 +1,4 @@
-# 14.09.2017
+# 16.09.2017
 from die import Die
 
 import matplotlib.pyplot as plt
@@ -7,18 +7,16 @@ import matplotlib.pyplot as plt
 die = Die()
 
 # Make some rolls, and store results in a list.
-results = [die.roll() for roll_num in range(1000)]
+results = [die.roll() for roll_num in range(10000)]
 
 # Analyze the results.
-frequencies = [results.count(value) for value in range(1, die.num_sides+1)]
+x = range(1, die.num_sides+1)
+y = [results.count(value) for value in range(1, die.num_sides+1)]
 
 # Visualize the results.
-hist = plt.Bar()
-
-hist.title = "Results of rolling one D6 1000 times."
-hist.x_labels = [str(num) for num in range(1, 7)]
-hist.x_title = "Result"
-hist.y_title = "Frequency of Result"
-
-hist.add('D6', frequencies)
-hist.render_to_file('die_visual.svg')
+bar_width = 0.9
+plt.bar(x, y, bar_width)
+plt.xlabel('Result')
+plt.ylabel('Frequency of Result')
+plt.title('Results of rolling one D6 1000 times.')
+plt.show()
