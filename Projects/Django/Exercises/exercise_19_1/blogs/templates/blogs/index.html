@@ -1,0 +1,18 @@
+{% block content %}
+
+  <p>Blogs</p>
+
+  <ul>
+    {% for blog in blogs %}
+      <li>
+        <p>{{ blog.date_added|date:'M d, Y H:i' }}</p>
+        <p>{{ blog.text|linebreaks }}</p>
+      </li>
+    {% empty %}
+      <li>No blogs have been added yet.</li>
+    {% endfor %}
+  </ul>
+
+{#   <a href="{% url 'blogs:new_post' %}">Add a new topic:</a> #}
+
+{% endblock content %}
