@@ -1,5 +1,9 @@
 {% block content %}
 
+<p>
+  <a href="{% url 'blogs:index' %}">Blog</a>
+</p>
+
   <p>Blogs</p>
 
   <ul>
@@ -7,12 +11,15 @@
       <li>
         <p>{{ blog.date_added|date:'M d, Y H:i' }}</p>
         <p>{{ blog.text|linebreaks }}</p>
+        <p>
+          <a href="{% url 'blogs:edit_blog' blog.id %}">edit blog</a>
+        </p>
       </li>
     {% empty %}
       <li>No blogs have been added yet.</li>
     {% endfor %}
   </ul>
 
-{#   <a href="{% url 'blogs:new_post' %}">Add a new topic:</a> #}
+  <a href="{% url 'blogs:new_blog' %}">Add a new blog:</a>
 
 {% endblock content %}

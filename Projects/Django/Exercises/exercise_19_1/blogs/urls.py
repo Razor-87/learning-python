@@ -6,10 +6,10 @@ urlpatterns = [
     # Home page
     url(r'^$', views.index, name='index'),
 
-    # # Page for adding a new entry.
-    # url(r'^new_entry/(?P<topic_id>\d+)/$', views.new_entry, name='new_entry'),
+    # Page for adding a new blog.
+    url(r'^new_blog/$', views.new_blog, name='new_blog'),
 
-    # # Page for editing an entry.
-    # url(r'^edit_entry/(?P<entry_id>\d+)/$', views.edit_entry,
-    #     name='edit_entry'),
+    # Page for editing an blog.
+    url(r'^edit_blog/(?P<blog_id>\d+)/$', views.edit_blog,
+        name='edit_blog'),
 ]
