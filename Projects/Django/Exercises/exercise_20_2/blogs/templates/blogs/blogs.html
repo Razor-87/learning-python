@@ -1,0 +1,23 @@
+{% extends "blogs/base.html" %}
+
+{% block header %}
+  <h1>Blogs</h1>
+{% endblock %}
+
+{% block content %}
+
+  <ul>
+    {% for blog in blogs %}
+      <li>
+        <p>{{ blog.date_added|date:'M d, Y H:i' }}</p>
+        <p>{{ blog.text|linebreaks }}</p>
+        <h4><a href="{% url 'blogs:edit_blog' blog.id %}">edit blog</a></h4>
+      </li>
+    {% empty %}
+      <li>No blogs have been added yet.</li>
+    {% endfor %}
+  </ul>
+
+  <h4><a href="{% url 'blogs:new_blog' %}">Add a new blog:</a></h4>
+
+{% endblock content %}
